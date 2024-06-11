@@ -1,0 +1,21 @@
+lib.contentElement {
+  layoutRootPaths.200 = EXT:countdown_element/Resources/Private/Layouts/
+  templateRootPaths.200 = EXT:countdown_element/Resources/Private/Templates/
+  partialRootPaths.200 = EXT:countdown_element/Resources/Private/Partials/
+}
+
+tt_content {
+  countdownelement_countdownclock =< lib.contentElement
+  countdownelement_countdownclock {
+    templateName = CountdownClock
+  }
+}
+
+page {
+  includeCSSLibs {
+    countdown_element_fonts = EXT:countdown_element/Resources/Public/Css/fonts.css
+  }
+  includeCSS {
+    countdown_element = EXT:countdown_element/Resources/Public/Css/style.css
+  }
+}

@@ -1,0 +1,2 @@
+@import 'EXT:countdown_element/Configuration/TsConfig/Page/*.typoscript'
+@import 'EXT:countdown_element/Configuration/TsConfig/Page/Mod/Wizards/NewContentElement.tsconfig'

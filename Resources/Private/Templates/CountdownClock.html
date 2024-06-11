@@ -1,0 +1,19 @@
+<f:layout name="Countdown" />
+
+<f:section name="Main">
+    <f:switch expression="{data.layout}">        
+        <f:defaultCase>
+            <f:render section="FlippingDials" arguments="{_all}" />
+        </f:defaultCase>
+    </f:switch>
+</f:section>
+
+<f:section name="FlippingDials">
+    <f:asset.script identifier="countdown_element_clocks" src="EXT:countdown_element/Resources/Public/JavaScript/CountdownClocks.js" type="module" />
+    <div class="cc-clock" data-releasedate="{data.cc_release_date -> f:format.date(format: 'd M Y H:m:d')} {data.cc_release_date -> f:format.date(format: 'T')}" data-identifier="{data.uid}">
+        <f:render partial="FlippingDial" arguments="{identifier: 'days', data: data}" />
+        <f:render partial="FlippingDial" arguments="{identifier: 'hours', data: data}" />
+        <f:render partial="FlippingDial" arguments="{identifier: 'minutes', data: data}" />
+        <f:render partial="FlippingDial" arguments="{identifier: 'seconds', data: data}" />
+    </div>
+</f:section>

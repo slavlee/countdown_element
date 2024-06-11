@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:countdown_element/Resources/Private/Language/locallang_tca.xlf" date="2024-06-03T15:43:51Z" product-name="countdown_element">
+        <header/>
+        <body>
+			<trans-unit id="internal_title" resname="internal_title">
+				<source>Interal title (not displayed)</source>
+			</trans-unit>
+			<trans-unit id="wizards_group_t3t" resname="wizards_group_t3t">
+				<source>T3 Templates</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

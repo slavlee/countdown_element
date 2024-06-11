@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:countdown_element/Resources/Private/Language/locallang_db.xlf" date="2024-06-03T15:43:51Z" product-name="countdown_element">
+        <header/>
+        <body>
+			<trans-unit id="tt_content.cc_release_date" resname="tt_content.cc_release_date">
+				<source>Release Date</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

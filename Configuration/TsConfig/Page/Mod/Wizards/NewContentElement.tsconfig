@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+  t3t {
+    header = LLL:EXT:countdown_element/Resources/Private/Language/locallang_tca.xlf:wizards_group_t3t
+    elements {
+      countdownelement_countdownclock {
+        iconIdentifier = content-countdownclock
+        title = LLL:EXT:countdown_element/Resources/Private/Language/locallang.xlf:countdown_clock_label
+        description = LLL:EXT:countdown_element/Resources/Private/Language/locallang.xlf:countdown_clock_description
+        tt_content_defValues {
+          CType = countdownelement_countdownclock
+        }
+      }
+    }
+    show := addToList(countdownelement_countdownclock)
+  }
+}
