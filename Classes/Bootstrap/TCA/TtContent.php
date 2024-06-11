@@ -76,7 +76,7 @@ class TtContent extends Base
                     'config' => [
                         'type' => 'datetime',
                         'default' => time(),
-                    ]
+                    ],
                 ],
             ],
         );
