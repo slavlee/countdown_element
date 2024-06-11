@@ -65,7 +65,7 @@ handleDbmsAndDriverOptions() {
 
 # Load help text into $HELP
 read -r -d '' HELP <<EOF
-slavlee/popup-power test runner. Execute unit test suite and some other details.
+slavlee/countdown_element test runner. Execute unit test suite and some other details.
 Also used by github for test execution.
 
 Recommended docker version is >=20.10 for xdebug break pointing to work reliably, and
