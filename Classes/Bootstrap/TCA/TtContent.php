@@ -57,9 +57,9 @@ class TtContent extends Base
             'textmedia',
             'after',
         );
-        
+
         // Adds the content element icon to TCA typeicon_classes
-        $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][$pluginSignature] = 'content-countdownclock';        
+        $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][$pluginSignature] = 'content-countdownclock';
     }
 
     /**
@@ -67,14 +67,15 @@ class TtContent extends Base
      */
     private function addTCAcolumns(): void
     {
-        ExtensionManagementUtility::addTCAcolumns('tt_content',
+        ExtensionManagementUtility::addTCAcolumns(
+            'tt_content',
             [
                 'cc_release_date' => [
                     'exclude' => 0,
                     'label' => 'LLL:EXT:countdown_element/Resources/Private/Language/locallang_db.xlf:tt_content.cc_release_date',
                     'config' => [
                         'type' => 'datetime',
-                        'default' => time()
+                        'default' => time(),
                     ]
                 ],
             ],
@@ -86,7 +87,7 @@ class TtContent extends Base
             'countdownelement_countdownclock'
         );
     }
-    
+
     /**
      * Register new CType: $this->extensionKey . '_countdownclock'
      */
@@ -101,7 +102,7 @@ class TtContent extends Base
                        header; LLL:EXT:countdown_element/Resources/Private/Language/locallang_tca:internal_title,
                        cc_release_date; LLL:EXT:countdown_element/Resources/Private/Language/locallang_db:tt_content.cc_release_date,
                     --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
-                       --palette--;;frames,   
+                       --palette--;;frames,
                     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                        --palette--;;hidden,
                        --palette--;;access,
