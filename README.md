@@ -19,3 +19,6 @@ The changelogs can be found inside the [CHANGES.md](CHANGES.md) file.
 
 [1]: https://extensions.typo3.org/extension/countdown_element
 [2]: https://t3templates.de/en/products
+
+## 5 Development infos
+- git update-index --chmod=+x ./Build/Scripts/runTests.sh
