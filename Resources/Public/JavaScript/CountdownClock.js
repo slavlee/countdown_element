@@ -19,11 +19,19 @@ export class CountdownClock {
 
     this.updateRemainingTime(true);
 
+    if (this.timeHasFinished()) {
+      // set all fields to zero, if time has finished
+      this.resetAllElements();
+    }
+
     var cObj = this;
     setInterval(function () {
       cObj.now = new Date();
       if (!cObj.timeHasFinished()) {
         cObj.updateRemainingTime();
+      }else {
+        // set all fields to zero, if time has finished
+        cObj.resetAllElements();
       }
     }, 1000);
   }
@@ -91,6 +99,24 @@ export class CountdownClock {
 
     this.updateFront(clone, remainingFnResultFront);
     this.updateBack(clone, remainingFnResultBack);
+  }
+
+  /**
+   * Set all fields to 0
+   */
+  resetAllElements() {
+    const fields = ['days', 'hours', 'minutes', 'seconds'];
+
+    fields.forEach((id) => {
+      const element = document.getElementById(id + this.clockSettings.identifer);
+
+      if (element && !element.classList.contains('time-has-finished')) {
+        element.classList.remove('time-transition');
+        element.classList.add('time-has-finished')
+        this.updateFront(element, 0);
+        this.updateBack(element, 0);
+      }
+    });
   }
 
   getRemainingDays(_oneSecondInFuture) {

@@ -1,3 +1,8 @@
+### Version 1.0.2
+- [BUGFIX] Reset clock, when time has finished
+- [BUGFIX] Dont handle time zones
+- [BUGFIX] Wrong minute format in date string
+
 ### Version 1.0.1
 - [BUGFIX] frame classes are always appended despite frame_class settings, because it is needed.
 - [NOTICE] Sanity check on Clocks js code to check for clock
