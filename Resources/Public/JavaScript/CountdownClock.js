@@ -8,7 +8,9 @@ export class CountdownClock {
     let clock  = this.countdownElement.firstChild.nextSibling;
 
     if (!clock) {
-      console.error('Clock could not be found. Make sure the countdown elements uses section frames with this class: frame-type-countdownelement_countdownclock.');
+      console.error('Clock could not be found. Make sure the countdown elements uses section frames with this class: frame-type-countdownelement_countdownclock. If you want to create an github issue, then include screenshots from the debug console window too.');
+      console.debug(this.countdownElement);
+      console.debug(this.countdownElement.firstChild);
       return;
     }
 

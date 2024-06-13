@@ -1,3 +1,6 @@
+### Version 1.0.3
+- [NOTICE] Extend debug info, if clock can not be found.
+
 ### Version 1.0.2
 - [BUGFIX] Reset clock, when time has finished
 - [BUGFIX] Dont handle time zones
