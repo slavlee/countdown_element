@@ -4,9 +4,15 @@ export class CountdownClock {
   }
 
   run() {
-    this.now = new Date();    
+    this.now = new Date();
     let clock  = this.countdownElement.firstChild.nextSibling;
-    this.clockSettings = {      
+
+    if (!clock) {
+      console.error('Clock could not be found. Make sure the countdown elements uses section frames with this class: frame-type-countdownelement_countdownclock.');
+      return;
+    }
+
+    this.clockSettings = {
       releaseDate: new Date(clock.getAttribute("data-releasedate")),
       identifer: clock.getAttribute("data-identifier")
     }
@@ -72,15 +78,15 @@ export class CountdownClock {
       case 'hours':
         remainingFnResultFront = this.getRemainingHours();
         remainingFnResultBack = this.getRemainingHours(true);
-        break;  
+        break;
       case 'minutes':
         remainingFnResultFront = this.getRemainingMinutes();
         remainingFnResultBack = this.getRemainingMinutes(true);
-        break; 
+        break;
       case 'seconds':
         remainingFnResultFront = this.getRemainingSeconds();
         remainingFnResultBack = this.getRemainingSeconds(true);
-        break;  
+        break;
     }
 
     this.updateFront(clone, remainingFnResultFront);

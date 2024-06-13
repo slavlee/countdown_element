@@ -1,3 +1,9 @@
+### Version 1.0.1
+- [BUGFIX] frame classes are always appended despite frame_class settings, because it is needed.
+
+### Version 1.0.0
+- [IMPORTANT] First stable release
+
 ### Version 0.3.0
 - [IMPORTANT] Only source control the extension
 
