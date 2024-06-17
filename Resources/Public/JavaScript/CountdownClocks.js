@@ -5,7 +5,7 @@ class CountdownClocks
     constructor() {
         const defaultSettings = {
             selectors: {
-                countdownElement: '.frame-type-countdownelement_countdownclock'
+                countdownElement: '.frame-type-countdownelement_countdownclock.frame-clocktype-default'
             }
         }
 
@@ -14,12 +14,12 @@ class CountdownClocks
         }else {
             this.settings = {
                 defaultSettings,
-                ccGlobalSettings  
+                ccGlobalSettings
               };
         }
 
         this.countdownElements = document.querySelectorAll(this.settings.selectors.countdownElement);
-        this.run();        
+        this.run();
     }
 
     run() {

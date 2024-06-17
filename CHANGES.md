@@ -1,3 +1,6 @@
+### Version 1.1.0
+- [IMPORTANT] Change clock selector to ".frame-type-countdownelement_countdownclock.frame-clocktype-default" to prepare PRO version
+
 ### Version 1.0.3
 - [NOTICE] Extend debug info, if clock can not be found.
 

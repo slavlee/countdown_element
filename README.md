@@ -11,6 +11,8 @@ Download and install the [extension][1] with the extension manager module.
 #### 2.2 Installation with composer
 `composer req slavlee/countdown-element`
 
+Include **Countdown Element - Base** into your TypoScript sets.
+
 ## Explore more
 If you are looking for awesome and easy to use TYPO3 templates and extensions, then visit: [T3 Templates][2]
 
