@@ -103,6 +103,7 @@ class TtContent extends Base
                        cc_release_date; LLL:EXT:countdown_element/Resources/Private/Language/locallang_db:tt_content.cc_release_date,
                     --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                        --palette--;;frames,
+                    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, --palette--;;language,
                     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                        --palette--;;hidden,
                        --palette--;;access,

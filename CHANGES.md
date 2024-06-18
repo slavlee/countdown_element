@@ -1,3 +1,6 @@
+### Version 1.1.1
+- [BUGFIX] Add language tab
+
 ### Version 1.1.0
 - [IMPORTANT] Change clock selector to ".frame-type-countdownelement_countdownclock.frame-clocktype-default" to prepare PRO version
 
