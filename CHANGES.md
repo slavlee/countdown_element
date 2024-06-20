@@ -1,3 +1,6 @@
+### Version 1.1.2
+- [NOTICE] Add Buy Pro Link
+
 ### Version 1.1.1
 - [BUGFIX] Add language tab
 

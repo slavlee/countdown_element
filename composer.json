@@ -1,7 +1,7 @@
 {
     "name": "slavlee/countdown-element",
     "type": "typo3-cms-extension",
-    "description": "Powerful TYPO3 extension to display countdown timers.",
+    "description": "Powerful TYPO3 extension to display countdown timers. Buy the PRO version: https://countdown-element.slavlee.de/free-vs-pro/",
     "license": "GPL-2.0-or-later",
     "require": {
         "php": "^8.1 || ^8.2 || ^8.3",
